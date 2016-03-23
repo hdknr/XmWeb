@@ -9,7 +9,8 @@ namespace XmWeb
 		public App ()
 		{
 			// The root page of your application
-			MainPage = new HomePage();
+//			MainPage = new HomePage();
+			MainPage = new LocalPage();
 		}
 
 		protected override void OnStart ()

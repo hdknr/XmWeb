@@ -10,8 +10,10 @@
 			Spacing="0"
 			Padding="20">
 
+			<Editor
+				Text="{Binding Comment.Value}"/>
             <WebView 
-            	Source="https://www.apple.com/" 
+            	Source="{Binding Url}"
             	x:Name="MainView"
             	HeightRequest="800"/>
 

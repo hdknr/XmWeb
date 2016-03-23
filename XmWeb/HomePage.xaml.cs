@@ -14,8 +14,13 @@ namespace XmWeb
 		{
 			InitializeComponent ();
 
-			this.BindingContext = new ViewModel {
-				Url = "https://www.apple.com"
+			var vm = new ViewModel {
+				Url = "https://www.apple.com/"
+			};
+			this.BindingContext = vm;
+			MainView.Navigating += (object sender, WebNavigatingEventArgs e) => {
+				System.Diagnostics.Debug.WriteLine($"{e.Url} / {vm.Url}");
+				e.Cancel = (e.Url != vm.Url );			// prohibit navigation
 			};
 		}
 

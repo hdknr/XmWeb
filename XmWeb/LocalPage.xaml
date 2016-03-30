@@ -1,5 +1,10 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="XmWeb.LocalPage">
+<ContentPage 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	xmlns:local="clr-namespace:XmWeb;assembly=XmWeb"
+	x:Class="XmWeb.LocalPage">
+
 	<ContentPage.Content>
 	<StackLayout 
 			Orientation="Vertical" 
@@ -7,7 +12,7 @@
 			Spacing="0"
 			Padding="20">
 
-            <WebView 
+            <local:ExWebView 
             	x:Name="MainView"
             	HeightRequest="800"/>
 

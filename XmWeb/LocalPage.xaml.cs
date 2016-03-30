@@ -40,6 +40,8 @@ namespace XmWeb
 				BaseUrl = base_dir
 			};
 			MainView.Source = html;
+			var class_name = MainView.GetType ().FullName;
+			System.Diagnostics.Debug.Assert (class_name == "XmWeb.ExWebView");
 		}
 	}
 }

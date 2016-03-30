@@ -11,6 +11,7 @@ namespace XmWeb
 			// The root page of your application
 //			MainPage = new HomePage();
 			MainPage = new LocalPage();
+
 		}
 
 		protected override void OnStart ()

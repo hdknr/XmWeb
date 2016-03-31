@@ -1,0 +1,21 @@
+﻿@model HomePageData
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      margin: 0px;
+      font-family: helvetica;
+    }
+  </style>
+</head>
+<body>
+<h1>@Model.Title</h1>
+<div>
+@Model.Now.ToString("F")
+</div>
+<div>
+<a href="./?command=reload">リロード</a>
+</div>
+</body>
+</html>
